@@ -1,1 +1,18 @@
-This is a second file. I will add a python script momentarily.
+#!/usr/bin/env python3
+
+"""Simple greeting script."""
+
+def get_greeting(name: str) -> str:
+    """Return a greeting for the given name."""
+    return f"Hello, {name}! Welcome to your Python script."
+
+
+def main() -> None:
+    name = input("Enter your name: ")
+    greeting = get_greeting(name.strip() or "Friend")
+    print(greeting)
+
+
+if __name__ == "__main__":
+    main()
+
