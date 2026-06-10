@@ -16,3 +16,4 @@ def main() -> None:
 if __name__ == "__main__":
     main()
 
+print("This is the second file, which can be used for testing imports and other functionalities.")
