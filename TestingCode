@@ -1,0 +1,18 @@
+#!/usr/bin/env python3
+
+"""Read two integers from the user and print their sum."""
+
+def main() -> None:
+    try:
+        first = int(input("Enter the first integer: "))
+        second = int(input("Enter the second integer: "))
+    except ValueError:
+        print("Please enter valid integers.")
+        return
+
+    total = first + second
+    print(f"The sum of {first} and {second} is {total}.")
+
+
+if __name__ == "__main__":
+    main()
